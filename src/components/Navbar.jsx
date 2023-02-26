@@ -35,7 +35,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                     <div className="flex justify-between gap-16 font-opensans text-sm font-bold">
                         <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                         <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-                        <Link page="Testimonial" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                         <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                         <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                     </div>
@@ -54,7 +53,6 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         <div className="flex flex-col gap-10 h-screen items-center text-deep-blue">
                             <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                             <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-                            <Link page="Testimonial" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                             <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                             <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                         </div>
