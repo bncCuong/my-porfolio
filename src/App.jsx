@@ -4,6 +4,11 @@ import useMediaQuery from './hooks/useMediaQuery';
 import DotGroup from './components/DotGroup';
 import Navbar from './components/Navbar';
 import LandingPage from './components/Landing';
+import LineGradient from './components/LineGradient';
+import MySkill from './components/MySkill';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
     const [selectedPage, setSelectedPage] = useState('home');
@@ -12,11 +17,11 @@ function App() {
 
     useEffect(() => {
         const scrollHanler = () => {
-            if (window.scrollY === 0)  setIsTopOfPage(true);
-            if (window.scrollY !== 0) setIsTopOfPage(false)
+            if (window.scrollY === 0) setIsTopOfPage(true);
+            if (window.scrollY !== 0) setIsTopOfPage(false);
         };
         window.addEventListener('scroll', scrollHanler);
-        return () =>  window.removeEventListener('scroll', scrollHanler);
+        return () => window.removeEventListener('scroll', scrollHanler);
     }, []);
     return (
         <div className="app bg-deep-blue ">
@@ -25,6 +30,22 @@ function App() {
                 {isAboutMediumScreens && <DotGroup setSelectedPage={setSelectedPage} selectedPage={selectedPage} />}
             </div>
             <LandingPage setSelectedPage={setSelectedPage} />
+            <LineGradient />
+            <div className="w-5/6 mx-auto md:h-full">
+                <MySkill />
+            </div>
+            <LineGradient />
+            <div className="w-5/6 mx-auto">
+                <Projects />
+            </div>
+            <LineGradient />
+            <div className="w-5/6 mx-auto">
+                <Contact />
+            </div>{' '}
+            <LineGradient />
+            <div className="w-5/6 mx-auto">
+                <Footer />
+            </div>
         </div>
     );
 }
