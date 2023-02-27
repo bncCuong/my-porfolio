@@ -53,7 +53,13 @@ const Landing = ({ setSelectedPage }) => {
                             Cường
                         </span>
                     </p>
-                    <p className="mt-5 mb-20 text-xl text-center md:text-start">Never too late to start </p>
+                    <p>20/11/1994</p>
+                    <p>Thành phố Thái Bình, tỉnh Thái Bình</p>
+                    <p>0969747389</p>
+                    <AnchorLink onClick={() => setSelectedPage('contact')} href="#contact">
+                        cuongcuong201194@gmail.com
+                    </AnchorLink>
+                    <p className="my-10 text-xl text-center md:text-start text-red">Never too late to start </p>
                 </motion.div>
 
                 {/* CALL TO ACTIONS */}

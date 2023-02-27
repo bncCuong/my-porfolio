@@ -1,5 +1,11 @@
 import LineGradient from './LineGradient';
 import { motion } from 'framer-motion';
+import project_1 from '../assets/project-1.png';
+import project_2 from '../assets/project-2.png';
+import project_3 from '../assets/project-3.png';
+import project_4 from '../assets/project-4.png';
+
+const image = [project_1, project_2, project_3, project_4];
 
 const container = {
     hidden: {},
@@ -13,18 +19,16 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
-    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+const Project = ({ id, title, description }) => {
+    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-80 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-    const projectTitle = title.split(' ').join('-').toLowerCase();
-
     return (
         <motion.div variants={projectVariant} className="relative cursor-pointer">
             <div className={overlayStyles}>
                 <p className="text-2xl font-playfair">{title}</p>
-                <p className="mt-7">tor accumsan tincidunt.</p>
+                <p className="mt-7 text-lg font-semibold font-playfair">{description}</p>
             </div>
-            <img src={`../src/assets/${projectTitle}.jpeg`} alt={projectTitle} />
+            <img src={`${image[id]}`} alt="project" />
         </motion.div>
     );
 };
@@ -47,10 +51,11 @@ const Projects = () => {
                     <span className="text-red">Pro</span>ject
                 </p>
                 <LineGradient width="w-[50%]" />
-                <p className="my-10 w-[900px] text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum eligendi debitis consectetur
-                    voluptatem qui tempore, iure saepe, velit nisi fuga ut voluptatum. Beatae dolore ipsum sequi
-                    laudantium suscipit vero?
+                <p className="my-10 w-[900px] text-center font-playfair leading-[30px]">
+                    After six months of self-study from sources such as: F8, youtube, udemy. The knowledge gained is
+                    focused on ReactJs - Redux toolkit and Tailwindcss. Here are 4 small projects written on the React
+                    library. Although not really 100% complete, but I hope with this knowledge I can get a job related
+                    to programming. Thank you for taking the time to look through my projects
                 </p>
             </motion.div>
 
@@ -69,10 +74,10 @@ const Projects = () => {
                     >
                         My list project
                     </div>
-                    <Project title="project 1" />
-                    <Project title="Project 2" />
-                    <Project title="Project 3" />
-                    <Project title="Project 4" />
+                    <Project id="0" title="1" description="Todo App - the first project written and desgin by me" />
+                    <Project id="1" title="2" description="E-commerce webside - clothing store " />
+                    <Project id="2" title="3" description="Modern interface website has reponse" />
+                    <Project id="3" title="4" description="Mp3 webside " />
                     <div
                         className="flex justify-center text-center items-center bg-blue 
                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold p-10"

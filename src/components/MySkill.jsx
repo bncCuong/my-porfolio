@@ -25,9 +25,9 @@ const MySkill = () => {
                     </p>
                     <LineGradient width="w-[29%]" />
                     <p className="mt-10 mb-7">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsum eligendi debitis
-                        consectetur voluptatem qui tempore, iure saepe, velit nisi fuga ut voluptatum. Beatae dolore
-                        ipsum sequi laudantium suscipit vero?
+                        After a long time working and experiencing many different jobs and positions. I feel that I am a
+                        person who can easily integrate with many working environments and has the ability to work well
+                        in a team.
                     </p>
                 </motion.div>
                 <div className="mt-16 md:mt-0">
@@ -48,6 +48,7 @@ const MySkill = () => {
             <div className="md:flex md:justify-between mt-16 ">
                 {/* EXPERIENCE */}
                 <motion.div
+                    className="flex-1"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -60,16 +61,14 @@ const MySkill = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-3xl">01</p>
-                            <p className="font-playfair font-semibold text-5xl mt-3">Experience</p>
+                            <p className="font-playfair font-semibold text-5xl mt-3">Programing</p>
                         </div>
 
                         {/* <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" /> */}
                     </div>
-                    <p className="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat nulla impedit quia
-                        dicta. Iste, quisquam rerum labore perferendis reprehenderit laborum ipsam sunt! Expedita nulla
-                        accusantium inventore nihil cum eaque?
-                    </p>
+                    <p className="">HTML, CSS, SCSS - baisc</p>
+                    <p>Javascripts, NodeJs, git, github - basic</p>
+                    <p>ReactJs - redux toolkit - tailwindcss - basic</p>
                 </motion.div>
 
                 {/* INNOVATIVE */}
@@ -82,21 +81,21 @@ const MySkill = () => {
                         hidden: { opacity: 0, y: 50 },
                         visible: { opacity: 1, y: 0 },
                     }}
-                    className="md:mt-0 mt-20"
+                    className="md:mt-0 mt-20 flex-1"
                 >
                     <div className="relative h-20">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-3xl">02</p>
-                            <p className="font-playfair font-semibold text-5xl mt-3">Innovative</p>
+                            <p className="font-playfair font-semibold text-5xl mt-3">Soft skills</p>
                         </div>
 
                         {/* <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" /> */}
                     </div>
                     <p className="mt-10">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat nulla impedit quia
-                        dicta. Iste, quisquam rerum labore perferendis reprehenderit laborum ipsam sunt! Expedita nulla
-                        accusantium inventore nihil cum eaque?
+                        Have reading and comprehension skills in English - not good but still keep learing
                     </p>
+                    <p>Have high self-study ability</p>
+                    <p>Have a high sense of responsibility at work</p>
                 </motion.div>
             </div>
         </section>

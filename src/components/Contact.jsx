@@ -1,6 +1,7 @@
 import LineGradient from './LineGradient';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import contactImg from '../assets/contact-image.jpeg';
 
 const Contact = () => {
     const {
@@ -51,11 +52,11 @@ const Contact = () => {
                         visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <img src="../src/assets/contact-image.jpeg" alt="contact" />
+                    <img src={contactImg} alt="contact" />
                 </motion.div>
 
                 <motion.div
-                    className="basis-1/2 mt-10 mt-20 md:mt-10"
+                    className="basis-1/2  mt-20 md:mt-10"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -127,6 +128,10 @@ const Contact = () => {
                         >
                             SEND ME A MESSAGE
                         </button>
+                        <p>
+                            Don't worry about sending gmail. This is actually sent to my gmail. Or you can directly
+                            contact this phone number: 0969747389
+                        </p>
                     </form>
                 </motion.div>
             </div>
