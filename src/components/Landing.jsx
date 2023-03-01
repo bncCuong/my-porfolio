@@ -1,9 +1,8 @@
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import profile from '../assets/profile-image.png';
 import SocicalMediaIcon from '../components/SocicalMediaIcon';
-
+import profile from '../assets/profile-image.png';
 const Landing = ({ setSelectedPage }) => {
     const isAboveMediumScreen = useMediaQuery('(min-width: 1060px)');
     return (
@@ -12,8 +11,8 @@ const Landing = ({ setSelectedPage }) => {
             <div className="md:oder-2 flex basis-3/5 justify-center z-10 mt-16 md:mt-32">
                 {isAboveMediumScreen ? (
                     <div
-                        className="relative z-0 ml-20 mb-10 before:absolute before:z-[-1] before:rounded-t-[400px] before:border-2 before:border-blue 
-                    before:top-[10rem] before:left-0 before:w-full before:max-w-[500px] before:h-[650px] before:border-b-transparent "
+                        className="relative z-0 ml-20 before:absolute before:z-[-1] before:rounded-t-[400px] before:border-2 before:border-blue 
+                    before:-top-2 before:left-0 before:w-full before:max-w-[500px] before:h-[650px] before:border-b-transparent "
                     >
                         <img
                             src={profile}
@@ -54,8 +53,8 @@ const Landing = ({ setSelectedPage }) => {
                         </span>
                     </p>
 
-                    <p>Thành phố Thái Bình, tỉnh Thái Bình</p>
-                    <p>0969747389</p>
+                    <p className="mt-6 font-playfair">Thành phố Thái Bình, tỉnh Thái Bình</p>
+                    <p className="font-playfair">0969747389</p>
                     <AnchorLink onClick={() => setSelectedPage('contact')} href="#contact">
                         cuongcuong201194@gmail.com
                     </AnchorLink>
