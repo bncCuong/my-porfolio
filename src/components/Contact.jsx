@@ -128,10 +128,7 @@ const Contact = () => {
                         >
                             SEND ME A MESSAGE
                         </button>
-                        <p>
-                            Don't worry about sending gmail. This is actually sent to my gmail. Or you can directly
-                            contact this phone number: 0969747389
-                        </p>
+                        <p>Don't worry about sending gmail. This is actually sent to my gmail.</p>
                     </form>
                 </motion.div>
             </div>

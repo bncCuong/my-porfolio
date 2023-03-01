@@ -12,13 +12,13 @@ const Landing = ({ setSelectedPage }) => {
             <div className="md:oder-2 flex basis-3/5 justify-center z-10 mt-16 md:mt-32">
                 {isAboveMediumScreen ? (
                     <div
-                        className="relative z-0 ml-20 before:absolute before:z-[-1] before:rounded-t-[400px] before:border-2 before:border-blue 
-                    before:-top-20 before:-left-20 before:w-full before:max-w-[400px] before:h-full "
+                        className="relative z-0 ml-20 mb-10 before:absolute before:z-[-1] before:rounded-t-[400px] before:border-2 before:border-blue 
+                    before:top-[10rem] before:left-0 before:w-full before:max-w-[500px] before:h-[650px] before:border-b-transparent "
                     >
                         <img
                             src={profile}
                             alt="profile-img"
-                            className="hover:filter hover:saturate-200 transition duration-500 z-10 h-full max-w-[400px] md:max-w-[600px]"
+                            className="hover:filter  hover:saturate-200 transition duration-500 z-10 mb-28 max-w-[300px] md:max-w-[600px]"
                         />
                     </div>
                 ) : (
@@ -53,7 +53,7 @@ const Landing = ({ setSelectedPage }) => {
                             Cường
                         </span>
                     </p>
-                    <p>20/11/1994</p>
+
                     <p>Thành phố Thái Bình, tỉnh Thái Bình</p>
                     <p>0969747389</p>
                     <AnchorLink onClick={() => setSelectedPage('contact')} href="#contact">

@@ -19,17 +19,20 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ id, title, description }) => {
+const Project = ({ href, id, title, description }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-80 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
     return (
-        <motion.div variants={projectVariant} className="relative cursor-pointer">
-            <div className={overlayStyles}>
-                <p className="text-2xl font-playfair">{title}</p>
-                <p className="mt-7 text-lg font-semibold font-playfair">{description}</p>
-            </div>
-            <img src={`${image[id]}`} alt="project" />
-        </motion.div>
+        <a href={href} target="true">
+            <motion.div variants={projectVariant} className="relative cursor-pointer">
+                <div className={overlayStyles}>
+                    <p className="text-2xl font-playfair">{title}</p>
+                    <p className="mt-4 text-lg font-semibold font-playfair">{description}</p>
+                    <p className="font-playfair font-semibold">Click here to visit</p>
+                </div>
+                <img src={`${image[id]}`} alt="project" />
+            </motion.div>
+        </a>
     );
 };
 const Projects = () => {
@@ -74,10 +77,25 @@ const Projects = () => {
                     >
                         My list project
                     </div>
-                    <Project id="0" title="1" description="Todo App - the first project written and desgin by me" />
-                    <Project id="1" title="2" description="E-commerce webside - clothing store " />
-                    <Project id="2" title="3" description="Modern interface website has reponse" />
-                    <Project id="3" title="4" description="Mp3 webside " />
+                    <Project
+                        href="https://todoapp-wheat-nu.vercel.app/"
+                        id="0"
+                        title="1"
+                        description="Todo App - the first project written and desgin by me"
+                    />
+                    <Project
+                        href="https://e-commerce-six-gilt.vercel.app/"
+                        id="1"
+                        title="2"
+                        description="E-commerce webside - clothing store "
+                    />
+                    <Project
+                        href="http://modren-web.vercel.app"
+                        id="2"
+                        title="3"
+                        description="Modern interface website has reponse"
+                    />
+                    <Project href="http://mp3-app-bnccuong.vercel.app" id="3" title="4" description="Mp3 webside " />
                     <div
                         className="flex justify-center text-center items-center bg-blue 
                     max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold p-10"
