@@ -28,7 +28,7 @@ const Project = ({ href, id, title, description }) => {
                 <div className={overlayStyles}>
                     <p className="text-2xl font-playfair">{title}</p>
                     <p className="mt-3 text-lg font-semibold font-playfair">{description}</p>
-                    <p> Click here to visit</p>
+                    <p className="font-playfair font-semibold"> Click here to visit</p>
                 </div>
                 <img src={`${image[id]}`} alt="project" />
             </a>
