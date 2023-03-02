@@ -73,7 +73,7 @@ const Projects = () => {
                 >
                     <div
                         className="flex justify-center text-center items-center bg-red 
-                    max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold p-10"
+                    max-w-[600px] max-h-[400px] text-2xl font-playfair font-semibold p-10"
                     >
                         My list project
                     </div>
@@ -98,7 +98,7 @@ const Projects = () => {
                     <Project href="http://mp3-app-bnccuong.vercel.app" id="3" title="4" description="Mp3 webside " />
                     <div
                         className="flex justify-center text-center items-center bg-blue 
-                    max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold p-10"
+                    max-w-[600px] max-h-[400px] text-2xl font-playfair font-semibold p-10"
                     >
                         Thanks
                     </div>
