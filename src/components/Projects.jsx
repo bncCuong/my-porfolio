@@ -23,14 +23,14 @@ const Project = ({ href, id, title, description }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-80 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-10 text-deep-blue`;
     return (
-        <a href={href} target="true">
+        <a href={href} target="_blank">
             <motion.div variants={projectVariant} className="relative cursor-pointer">
                 <div className={overlayStyles}>
                     <p className="text-2xl font-playfair">{title}</p>
                     <p className="mt-4 text-lg font-semibold font-playfair">{description}</p>
                     <p className="font-playfair font-semibold">Click here to visit</p>
                 </div>
-                <img src={`${image[id]}`} alt="project" />
+                <img src={`${image[id]}`} alt="project" className="h-[100%]" />
             </motion.div>
         </a>
     );
@@ -83,12 +83,7 @@ const Projects = () => {
                         title="1"
                         description="Todo App - the first project written and desgin by me"
                     />
-                    <Project
-                        href="https://e-commerce-six-gilt.vercel.app/"
-                        id="1"
-                        title="2"
-                        description="E-commerce webside - clothing store "
-                    />
+                    <Project href="https://amazon-web-phi.vercel.app/" id="1" title="2" description="Amazon webside" />
                     <Project
                         href="http://modren-web.vercel.app"
                         id="2"

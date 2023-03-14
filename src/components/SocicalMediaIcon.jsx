@@ -6,7 +6,7 @@ const SocicalMediaIcon = () => {
         <div className="flex justify-center md:justify-start my-10 gap-7 ">
             <a
                 className="hover:opacity-50 transition duration-500"
-                href="https://github.com/bncCuong"
+                href="https://github.com/bncCuong?tab=repositories"
                 target="_blank"
                 rel="noreferren"
             >
