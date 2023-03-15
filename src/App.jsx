@@ -31,7 +31,7 @@ function App() {
             </div>
             <LandingPage setSelectedPage={setSelectedPage} />
             <LineGradient />
-            <div className="w-5/6 mx-auto md:h-full">
+            <div className="w-5/6 mx-auto md:h-full mb-20 md:mb-0">
                 <MySkill />
             </div>
             <LineGradient />

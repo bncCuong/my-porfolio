@@ -6,7 +6,7 @@ import skill from '../assets/skills-image.png';
 const MySkill = () => {
     const isAboveMediumScreen = useMediaQuery('(min-width: 1060px)');
     return (
-        <section id="skills" className="pt-10 pb-24">
+        <section id="skills" className="pt-10 pb-24 font-playfair">
             {/* HEADER AND IMAGE SECTION */}
             <div className="md:flex md:justify-between md:gap-16 mt-32 ">
                 <motion.div
@@ -66,9 +66,9 @@ const MySkill = () => {
 
                         {/* <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" /> */}
                     </div>
-                    <p className="">HTML, CSS, SCSS - baisc</p>
-                    <p>Javascripts, NodeJs, git, github - basic</p>
-                    <p>ReactJs - redux toolkit - tailwindcss - basic</p>
+                    <p>React, Next.JS, Redux toolkit, Redux Middleware</p>
+                    <p>HTML, JavaScript, TypeScript, CSS, SCSS, Tailwind Css, Material UI, </p>
+                    <p>Firebase, NodeJs, Git, Github </p>
                 </motion.div>
 
                 {/* INNOVATIVE */}
@@ -81,7 +81,7 @@ const MySkill = () => {
                         hidden: { opacity: 0, y: 50 },
                         visible: { opacity: 1, y: 0 },
                     }}
-                    className="md:mt-0 mt-20 flex-1"
+                    className="md:mt-0 mt-10 flex-1"
                 >
                     <div className="relative h-20">
                         <div className="z-10">
@@ -89,13 +89,13 @@ const MySkill = () => {
                             <p className="font-playfair font-semibold text-5xl mt-3">Soft skills</p>
                         </div>
 
-                        {/* <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" /> */}
+                        <div className="mt-7">
+                            <p>Self-study ability</p>
+                            <p> Good teamwork </p>
+                            <p>Communicate </p>
+                            <p> Positive attitude at work</p>
+                        </div>
                     </div>
-                    <p className="mt-10">
-                        Have reading and comprehension skills in English - not good but still keep learing
-                    </p>
-                    <p>Have high self-study ability</p>
-                    <p>Have a high sense of responsibility at work</p>
                 </motion.div>
             </div>
         </section>
